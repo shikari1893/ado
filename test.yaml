@@ -1,7 +1,7 @@
-trigger:
-  branches:
-    include:
-      - main
+trigger: none
+  #branches:
+  #  include:
+   #   - main
 
 pool:
   vmImage: ubuntu-latest
@@ -17,6 +17,10 @@ resources:
      branches:
       include:
         - main
+pr:
+  branches:
+    include:
+      - main
       
     
 
