@@ -20,7 +20,7 @@ resources:
           
   - repository: ado1
     type: github
-    endpoint: GitHub
+    endpoint: github.com_shikari1893
     name: shikari1893/ado1
     trigger:
       - main
