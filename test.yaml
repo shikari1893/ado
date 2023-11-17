@@ -8,7 +8,7 @@ resources:
   - repository: test1 # The name used to reference this repository in the checkout step
     type: github
     endpoint: shivgithub
-    name: shiv/ado
+    name: ado
     #ref: refs/heads/main
     trigger:
      branches:
