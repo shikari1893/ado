@@ -22,7 +22,7 @@ stages:
   jobs:
   - job: CheckoutCode
     steps: 
-    - checkout: self # checkout code in the CLIIP repository
+    - checkout: test1 # checkout code in the CLIIP repository
     - bash: |
               ls -l
               
