@@ -9,7 +9,7 @@ resources:
     type: github
     endpoint: shivgithub
     name: shikari1893/ado1
-    #ref: refs/heads/main
+    ref: refs/heads/main
     trigger:
      branches:
       include:
