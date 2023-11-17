@@ -7,8 +7,15 @@ resources:
   repositories:
   - repository: test1 # The name used to reference this repository in the checkout step
     type: github
-    endpoint: enterprisecloud
-    name: shiv2192612/test1
+    endpoint: shivgithub
+    name: ado/main
+    ref: refs/heads/main
+    trigger:
+     branches:
+      include:
+        - main
+      
+    
 
 stages:
 - stage: CheckoutCode
@@ -18,4 +25,4 @@ stages:
     - checkout: self # checkout code in the CLIIP repository
     - bash: |
               ls -l
-              sh shiv.sh
+              
