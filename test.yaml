@@ -17,12 +17,7 @@ resources:
       
     
 
-stages:
-- stage: CheckoutCode
-  jobs:
-  - job: script
-    steps:  # checkout code in the CLIIP repository
-    - bash: |
-              pwd
-              ls -l
+steps:
+  - bash: | 
+      ls
               
