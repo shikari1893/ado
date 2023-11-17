@@ -20,8 +20,8 @@ resources:
           
   - repository: org
     type: github
-    endpoint: shivgithub
-    name: shiv2192612/test
+    endpoint: GitHub
+    name: shikari1893/ado1
     #trigger:
     #- main
     
