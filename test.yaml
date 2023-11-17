@@ -37,7 +37,7 @@ resources:
     
 
 steps:
-  - checkout: self
+  #- checkout: self
   - checkout: ado1
   - bash: | 
       ls
