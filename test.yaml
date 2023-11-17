@@ -20,9 +20,9 @@ resources:
 stages:
 - stage: CheckoutCode
   jobs:
-  - job: CheckoutCode
-    steps: 
-    - checkout: test1 # checkout code in the CLIIP repository
+  - job: script
+    steps:  # checkout code in the CLIIP repository
     - bash: |
+              pwd
               ls -l
               
