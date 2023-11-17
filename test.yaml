@@ -22,10 +22,10 @@ resources:
     type: github
     endpoint: github.com_shikari1893
     name: shikari1893/ado1
-    trigger:
-      branches:
-         include:
-             - main
+    #trigger:
+    #  branches:
+    #     include:
+    #         - main
     
 
     #pr:
