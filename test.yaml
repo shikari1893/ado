@@ -17,11 +17,11 @@ resources:
      branches:
       include:
         - main
+    
 
-
-pr:
-  branches:
-    include:
+    pr:
+     branches:
+      include:
       - main
       
     
