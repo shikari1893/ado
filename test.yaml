@@ -9,7 +9,7 @@ resources:
     type: github
     endpoint: shivgithub
     name: shiv/ado
-    ref: refs/heads/main
+    #ref: refs/heads/main
     trigger:
      branches:
       include:
