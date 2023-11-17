@@ -8,15 +8,15 @@ pool:
   
 resources:
   repositories:
-  - repository: test1 # The name used to reference this repository in the checkout step
-    type: github
-    endpoint: shivgithub
-    name: shikari1893/ado1
-    ref: main
-    trigger:
-     branches:
-        include:
-          - main
+  # - repository: test1 # The name used to reference this repository in the checkout step
+  #   type: github
+  #   endpoint: shivgithub
+  #   name: shikari1893/ado1
+  #   ref: main
+  #   trigger:
+  #    branches:
+  #       include:
+  #         - main
           
   - repository: org
     type: github
@@ -26,10 +26,10 @@ resources:
     #- main
     
 
-    pr:
-     branches:
-      include:
-      - main
+    #pr:
+    # branches:
+    #  include:
+    #  - main
 #pr:
 #  branches:
 #    include:
@@ -38,7 +38,7 @@ resources:
 
 steps:
   - checkout: self
-  - checkout: test1
+  - checkout: org
   - bash: | 
       ls
               
