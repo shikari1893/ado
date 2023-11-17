@@ -23,7 +23,9 @@ resources:
     endpoint: github.com_shikari1893
     name: shikari1893/ado1
     trigger:
-      - main
+      branches:
+         include:
+             - main
     
 
     #pr:
