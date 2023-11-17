@@ -18,12 +18,12 @@ resources:
   #       include:
   #         - main
           
-  - repository: org
+  - repository: ado1
     type: github
     endpoint: GitHub
     name: shikari1893/ado1
-    #trigger:
-    #- main
+    trigger:
+      - main
     
 
     #pr:
@@ -38,7 +38,7 @@ resources:
 
 steps:
   - checkout: self
-  - checkout: org
+  - checkout: ado1
   - bash: | 
       ls
               
