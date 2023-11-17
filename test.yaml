@@ -17,12 +17,13 @@ resources:
      branches:
         include:
           - main
+          
   - repository: org
     type: github
     endpoint: shivgithub
     name: shiv2192612/test
-    trigger:
-    - main
+    #trigger:
+    #- main
     
 
     pr:
