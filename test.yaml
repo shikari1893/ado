@@ -17,9 +17,9 @@ resources:
      branches:
         include:
           - main
-  - repository: self
+  - repository: org
     type: github
-    name: shikari1893/ado3
+    name: shiv2192612/test
     trigger:
     - main
     
