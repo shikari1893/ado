@@ -17,6 +17,11 @@ resources:
      branches:
         include:
           - main
+  - repository: self
+    type: github
+    name: shikari1893/ado3
+    trigger:
+    - main
     
 
     pr:
