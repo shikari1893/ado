@@ -1,0 +1,21 @@
+trigger: none
+
+pool:
+  vmImage: ubuntu-latest
+  
+resources:
+  repositories:
+  - repository: test1 # The name used to reference this repository in the checkout step
+    type: github
+    endpoint: enterprisecloud
+    name: shiv2192612/test1
+
+stages:
+- stage: CheckoutCode
+  jobs:
+  - job: CheckoutCode
+    steps: 
+    - checkout: self # checkout code in the CLIIP repository
+    - bash: |
+              ls -l
+              sh shiv.sh
