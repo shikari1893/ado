@@ -3,7 +3,7 @@
 	"contentVersion": "1.0.0.0",
 	"parameters": {
 		"factoryName": {
-			"value": "OCE-REPORTING-POC-23488-df"
+			"value": " OCE-REPORTING-POC-23488-df "
 		},
 		"CCPM_passPhrase": {
 			"value": ""
