@@ -20,4 +20,7 @@
 			"metadata": "Secure string for 'passPhrase' of 'LOGIN'"
 		}
   }
+},
+  "resources": [],
+  "outputs": {}
 }
