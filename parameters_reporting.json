@@ -1,0 +1,173 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "OCE-REPORTING-POC-23488-df"
+		},
+		"CCPM_passPhrase": {
+			"value": ""
+		},
+		"ISSAC_passPhrase": {
+			"value": ""
+		},
+		"LOGIN_passPhrase": {
+			"value": ""
+		},
+		"OCEAzureSqlDatabase_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=ocereportingserver.database.windows.net;Initial Catalog=ocereporting;User ID=ocereporting"
+		},
+		"OCEAzureSqlKeyVault_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=ocereportingserver.database.windows.net;Initial Catalog=ocereporting;User ID=ocereporting"
+		},
+		"AzureBlobStorage2_properties_typeProperties_serviceEndpoint": {
+			"value": "https://ocereportingpoc.blob.core.windows.net/"
+		},
+		"AzureKeyVaultDataFactory_properties_typeProperties_baseUrl": {
+			"value": "https://dev1oce23488eastus2kv.vault.azure.net/"
+		},
+		"CCPM_properties_typeProperties_host": {
+			"value": "zlt05203.vci.att.com"
+		},
+		"CCPM_properties_typeProperties_userName": {
+			"value": "ipcadmin"
+		},
+		"ISSAC_properties_typeProperties_host": {
+			"value": "wfe-eastus2-nprd-db-sit1-vm-jump-v2.az.3pc.att.com"
+		},
+		"ISSAC_properties_typeProperties_userName": {
+			"value": "m85907"
+		},
+		"LOGIN_properties_typeProperties_host": {
+			"value": "uadmftp.cso.att.com"
+		},
+		"LOGIN_properties_typeProperties_userName": {
+			"value": "m03080"
+		},
+		"OCE_Adx_Adf_PE_properties_typeProperties_endpoint": {
+			"value": "https://oce-eastus2-poc-dx.eastus2.kusto.windows.net"
+		},
+		"OCE_Adx_Adf_PE_properties_typeProperties_database": {
+			"value": "Ocereporting"
+		},
+		"OCE_AuditLog_Adx_Adf_PE_properties_typeProperties_endpoint": {
+			"value": "https://oce-eastus2-poc-dx.eastus2.kusto.windows.net"
+		},
+		"OCE_AuditLog_Adx_Adf_PE_properties_typeProperties_database": {
+			"value": "auditlogdb"
+		},
+		"CCPM_Feed_Trigger_properties_pl_CCPM_parameters_feed": {
+			"value": "CCPM"
+		},
+		"ISAAC_Feed_Tumbling_Window_properties_pipeline_parameters_feed": {
+			"value": "ISAAC"
+		},
+		"Mylogin_Feed_Schedule_Trigger_properties_pl_usermgmt_feed_parameters_sinkMyLoginLocation": {
+			"value": "ABC"
+		},
+		"Pipleline_Completion_Trigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/510f2c47-3416-4e8c-a1ef-06c9e9399ffb/resourceGroups/OCE-REPORTING-POC1/providers/Microsoft.Storage/storageAccounts/ocereportingpoc"
+		},
+		"TMF_OpsMS_properties_pipeline_parameters_schema": {
+			"value": "tmf"
+		},
+		"TMF_OpsMS_properties_pipeline_parameters_tablename": {
+			"value": "oce_order_event"
+		},
+		"v101-historyload-commonorder_properties_pl_v101_history_load_encryption_parameters_ds_keyspace": {
+			"value": "commonorder"
+		},
+		"v101-historyload-orderrepo_properties_pl_v101_history_load_encryption_parameters_ds_keyspace": {
+			"value": "orderrepo"
+		},
+		"v101-historyload-transactionlosg-email_properties_pl_v101_history_load_encryption_parameters_ds_keyspace": {
+			"value": "transactionlosgemail"
+		},
+		"v101-historyload-transactionlosg_properties_pl_v101_history_load_encryption_parameters_ds_keyspace": {
+			"value": "transactionlosg"
+		},
+		"AzureBlobStorage1_properties_privateLinkResourceId": {
+			"value": "/subscriptions/510f2c47-3416-4e8c-a1ef-06c9e9399ffb/resourceGroups/OCE-REPORTING-POC1/providers/Microsoft.Storage/storageAccounts/ocereportingpoc"
+		},
+		"AzureBlobStorage1_properties_groupId": {
+			"value": "blob"
+		},
+		"AzureBlobStorage1_properties_fqdns": {
+			"value": [
+				"ocereportingpoc.blob.core.windows.net"
+			]
+		},
+		"MyLogin_PrivateEndpoint_properties_privateLinkResourceId": {
+			"value": "/subscriptions/510f2c47-3416-4e8c-a1ef-06c9e9399ffb/resourceGroups/dev1-23488-eastus2-OCE-ParentInfra-RG/providers/Microsoft.Network/privateLinkServices/dev1-23488-eastus2-uadmftp.cso.att.com.pls"
+		},
+		"MyLogin_PrivateEndpoint_properties_groupId": {
+			"value": ""
+		},
+		"MyLogin_PrivateEndpoint_properties_fqdns": {
+			"value": [
+				"uadmftp.cso.att.com"
+			]
+		},
+		"OCESql_adf_PLE_properties_privateLinkResourceId": {
+			"value": "/subscriptions/510f2c47-3416-4e8c-a1ef-06c9e9399ffb/resourceGroups/OCE-REPORTING-POC1/providers/Microsoft.Sql/servers/ocereportingserver"
+		},
+		"OCESql_adf_PLE_properties_groupId": {
+			"value": "sqlServer"
+		},
+		"OCESql_adf_PLE_properties_fqdns": {
+			"value": [
+				"ocereportingserver.database.windows.net"
+			]
+		},
+		"PrivateEndpoint_ISAAC_NonProd_properties_privateLinkResourceId": {
+			"value": "/subscriptions/778fbbfa-a4df-4a45-94da-a081e4ecd2ca/resourceGroups/wfe-eastus2-nprd-db-sit1-rg-v2/providers/Microsoft.Network/privateLinkServices/10593-eastus2-nprd-db-sit1-pls-v2"
+		},
+		"PrivateEndpoint_ISAAC_NonProd_properties_groupId": {
+			"value": ""
+		},
+		"PrivateEndpoint_ISAAC_NonProd_properties_fqdns": {
+			"value": [
+				"wfe-eastus2-nprd-db-sit1-vm-jump-v2.az.3pc.att.com"
+			]
+		},
+		"PrivateEndpoint_ISAAC_NonProd2_properties_privateLinkResourceId": {
+			"value": "/subscriptions/778fbbfa-a4df-4a45-94da-a081e4ecd2ca/resourceGroups/wfe-eastus2-nprd-db-sit2-rg-v2/providers/Microsoft.Network/privateLinkServices/10593-eastus2-nprd-db-sit2-pls-v2"
+		},
+		"PrivateEndpoint_ISAAC_NonProd2_properties_groupId": {
+			"value": ""
+		},
+		"PrivateEndpoint_ISAAC_NonProd2_properties_fqdns": {
+			"value": [
+				"wfe-eastus2-nprd-db-sit2-vm-jump-v2.az.3pc.att.com"
+			]
+		},
+		"dev1-23488-eastus2-oracle-ple_properties_privateLinkResourceId": {
+			"value": "/subscriptions/510f2c47-3416-4e8c-a1ef-06c9e9399ffb/resourceGroups/dev1-23488-eastus2-OCE-ParentInfra-RG/providers/Microsoft.Network/privateLinkServices/dev1-23488-eastus2-zlt03294.vci.att.com.pls"
+		},
+		"dev1-23488-eastus2-oracle-ple_properties_groupId": {
+			"value": ""
+		},
+		"dev1-23488-eastus2-oracle-ple_properties_fqdns": {
+			"value": [
+				"zlt03294.vci.att.com"
+			]
+		},
+		"dev1_23488_eastus2_zlt05203_vci_att_com_ple_properties_privateLinkResourceId": {
+			"value": "/subscriptions/510f2c47-3416-4e8c-a1ef-06c9e9399ffb/resourceGroups/dev1-23488-eastus2-OCE-ParentInfra-RG/providers/Microsoft.Network/privateLinkServices/dev1-23488-eastus2-zlt05203.vci.att.com.pls"
+		},
+		"dev1_23488_eastus2_zlt05203_vci_att_com_ple_properties_groupId": {
+			"value": ""
+		},
+		"dev1_23488_eastus2_zlt05203_vci_att_com_ple_properties_fqdns": {
+			"value": [
+				"zlt05203.vci.att.com"
+			]
+		},
+		"oce-eastus2-poc-adx-pe-oce-eastus2_properties_privateLinkResourceId": {
+			"value": "/subscriptions/510f2c47-3416-4e8c-a1ef-06c9e9399ffb/resourceGroups/oce-eastus2-poc-adx-rg-01/providers/Microsoft.Kusto/clusters/oce-eastus2-poc-dx"
+		},
+		"oce-eastus2-poc-adx-pe-oce-eastus2_properties_groupId": {
+			"value": "cluster"
+		}
+	}
+}
